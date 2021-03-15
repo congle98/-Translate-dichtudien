@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dịch</title>
+</head>
+<body>
+<h1>Dịch số từ tiếng anh sang tiếng việt chữ cái đầu yêu cầu viết hoa</h1>
+<input type="text" id="ip" placeholder="Nhập số cần dịch: ">
+<input type="button" value="Dịch" onclick="dich()">
+</body>
+</html>
+<script>
+    let array=["Số một","Số hai","Số ba","Số bốn","Số năm","Sô sáu","Số bảy","Số tám","Số chín","Số mười"]
+    let nAraay=["One","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten"]
+    function dich() {
+       let number=(document.getElementById('ip').value);
+       for (let i=0;i<array.length;i++){
+           if (number==nAraay[i]){
+               document.getElementById("ip").value=array[i];
+           }
+       }
+
+    }
+</script>
